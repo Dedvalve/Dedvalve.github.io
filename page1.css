@@ -1,0 +1,154 @@
+body {
+    background-color: lightblue;
+    background-image: url("background1.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+
+
+/*MAIN AREA OF PROJECT CARDS*/
+.arena{
+	margin-top: 30px;
+	margin-left: 10%; /*gives space from the left/right */
+	margin-right: 10%;
+	border-style: solid;
+}
+
+/*GIVES BORDERS TO THE PROJECT CARDS
+.arena > div{
+	border: 2px solid orange;
+}
+*/
+
+.arena {
+  display: grid;
+  grid-gap: 50px; /*how much space between each row*/
+  grid-auto-rows: 100px; 
+  grid-template-areas: /*this sets the length and width of a grid area you create*/
+    "a a a  b b b  c c c"
+    "a a a  b b b  c c c"
+    "d d d  e e e  f f f "
+    "d d d  e e e  f f f";
+  align-items: start;
+}
+
+/*EACH ITEM IS A PROJECT CARD FROM FROM LEFT TO RIGHT*/
+.item1 {
+	grid-area: a; /*designates which area it will go to based on the alphabet grid in ".arena"*/
+	margin: 0 auto; /*centers the content inside the gride area (parent)*/
+	transform: rotate(180deg); /*turns img upside-down*/
+	align-self: center;
+}
+.item2 {
+	grid-area: b;
+	margin: 0 auto;
+	transform: rotate(180deg);
+	align-self: center;
+}
+.item3 {
+	grid-area: c;
+	margin: 0 auto;
+	transform: rotate(180deg);
+	align-self: center;
+}
+.item4 {
+	grid-area: d;
+	margin: 0 auto;
+	align-self: center;
+}
+.item5 {
+	grid-area: e;
+	margin: 0 auto;
+	align-self: center;
+}
+.item6 {
+	grid-area: f;
+	margin: 0 auto;
+	align-self: center;
+}
+
+.footer{
+	position: fixed; /*locks the footer to the bottom of page even when scrolling*/
+	left: 0; /*sets position to the edge of screen*/
+	bottom: -100px; /*lowers the footer*/
+	text-align: center; 
+	width: 100%;
+	border: solid;
+}
+
+
+.cardSize{
+    height: 200px;
+    width: 120px;
+}
+
+.header{
+	color: red;
+}
+
+/*cardLEFT and cardRIGHT are to angle the two cards in the footer (about & contact)*/
+.cardleft{
+	transform: rotate(-20deg); 
+	position: relative; 
+	bottom: -10px;
+}
+.cardright{
+	transform: rotate(20deg); 
+	position: relative; 
+	bottom: -10px
+}
+
+/*creates zoom effect on cards*/
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.35); /* IE 9 */
+    -webkit-transform: scale(1.35); /* Safari 3-8 */
+    transform: scale(1.35); 
+}
+
+/*creates overlay effect on cards*/
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlayText{
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container{
+	position: relative;
+	width: 50%;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
