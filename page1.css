@@ -1,6 +1,6 @@
 body {
     background-color: lightblue;
-    background-image: url("background1.jpg");
+    background-image: url("wallpaper.jpg");
     background-size: cover;
 }
 
@@ -15,9 +15,15 @@ p {
 }
 
 
+.cardSize{ /*alternatives large/med*/
+    height: 220px; /*240*/ /*200*/
+    width: 135px; /*135*/  /*120*/
+}
+
+
 
 /*MAIN AREA OF PROJECT CARDS*/
-.arena{
+.arena{	/*setting position*/
 	margin-top: 30px;
 	margin-left: 10%; /*gives space from the left/right */
 	margin-right: 10%;
@@ -30,7 +36,7 @@ p {
 }
 */
 
-.arena {
+.arena { /*turning the area into a grid*/
   display: grid;
   grid-gap: 50px; /*how much space between each row*/
   grid-auto-rows: 100px; 
@@ -87,10 +93,7 @@ p {
 }
 
 
-.cardSize{
-    height: 200px;
-    width: 120px;
-}
+
 
 .header{
 	color: red;
