@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Demo_ConeriaScript;
+    src: url(coneria-script/Demo_ConeriaScript.ttf);
+}
+
 body {
     background-color: lightblue;
-    background-image: url("wallpaper.jpg");
+    background-image: url("wallpaper10.jpg");
     background-size: cover;
+    z-index: -1;
 }
 
 h1 {
@@ -10,23 +16,29 @@ h1 {
 }
 
 p {
-    font-family: verdana;
+
+}
+
+div{
+	font-family: Demo_ConeriaScript;
+    src: url(coneria-script/Demo_ConeriaScript.ttf);
     font-size: 20px;
 }
 
 
 .cardSize{ /*alternatives large/med*/
-    height: 220px; /*240*/ /*200*/
-    width: 135px; /*135*/  /*120*/
+    height: 200px; /*240*/ /*200*/
+    width: 120px; /*135*/  /*120*/
+    border-radius: 11px;
 }
 
 
 
 /*MAIN AREA OF PROJECT CARDS*/
 .arena{	/*setting position*/
-	margin-top: 30px;
-	margin-left: 10%; /*gives space from the left/right */
-	margin-right: 10%;
+	margin-top: 40px;
+	margin-left: 0%; /*gives space from the left/right */
+	margin-right: 40%;
 	border-style: solid;
 }
 
@@ -48,39 +60,61 @@ p {
   align-items: start;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*EACH ITEM IS A PROJECT CARD FROM FROM LEFT TO RIGHT*/
 .item1 {
 	grid-area: a; /*designates which area it will go to based on the alphabet grid in ".arena"*/
 	margin: 0 auto; /*centers the content inside the gride area (parent)*/
-	transform: rotate(180deg); /*turns img upside-down*/
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 .item2 {
 	grid-area: b;
 	margin: 0 auto;
-	transform: rotate(180deg);
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 .item3 {
 	grid-area: c;
 	margin: 0 auto;
-	transform: rotate(180deg);
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 .item4 {
 	grid-area: d;
 	margin: 0 auto;
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 .item5 {
 	grid-area: e;
 	margin: 0 auto;
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 .item6 {
 	grid-area: f;
 	margin: 0 auto;
 	align-self: center;
+	position: relative;
+    text-align: center;
+    color: white;
 }
 
 .footer{
