@@ -38,20 +38,28 @@ div{
 .arena{	/*setting position*/
 	margin-top: 40px;
 	margin-left: 0%; /*gives space from the left/right */
-	margin-right: 40%;
+	margin-right: 0%;
 	border-style: solid;
+	border-color: red;
 }
 
-/*GIVES BORDERS TO THE PROJECT CARDS
+@media only screen and (max-width: 600px){ /*when the width is X pixels or less change the structure of the page*/
+	.arena {
+		border-color: yellow;
+	}
+}
+
+/*GIVES BORDERS TO THE PROJECT CARDS*/
 .arena > div{
 	border: 2px solid orange;
 }
-*/
+
 
 .arena { /*turning the area into a grid*/
   display: grid;
-  grid-gap: 50px; /*how much space between each row*/
-  grid-auto-rows: 100px; 
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+
   grid-template-areas: /*this sets the length and width of a grid area you create*/
     "a a a  b b b  c c c"
     "a a a  b b b  c c c"
@@ -93,7 +101,7 @@ div{
     color: white;
 }
 .item4 {
-	grid-area: d;
+	grid-area: a;
 	margin: 0 auto;
 	align-self: center;
 	position: relative;
@@ -101,7 +109,7 @@ div{
     color: white;
 }
 .item5 {
-	grid-area: e;
+	grid-area: a;
 	margin: 0 auto;
 	align-self: center;
 	position: relative;
@@ -109,7 +117,7 @@ div{
     color: white;
 }
 .item6 {
-	grid-area: f;
+	grid-area: a;
 	margin: 0 auto;
 	align-self: center;
 	position: relative;
@@ -118,12 +126,13 @@ div{
 }
 
 .footer{
+	box-sizing: border-box; /*includes padding & border to our div*/
 	position: fixed; /*locks the footer to the bottom of page even when scrolling*/
-	left: 0; /*sets position to the edge of screen*/
-	bottom: -100px; /*lowers the footer*/
-	text-align: center; 
-	width: 100%;
+	bottom: -90px; /*lowers the footer*/
+	text-align: center; /*centers the cards*/
+	width: 100%; /*stretches footer to full width of screen*/
 	border: solid;
+	border-color: purple;
 }
 
 
