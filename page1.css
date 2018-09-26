@@ -1,34 +1,24 @@
-@font-face {
+@font-face { /*calls the font*/
     font-family: Demo_ConeriaScript;
     src: url(coneria-script/Demo_ConeriaScript.ttf);
 }
 
 body {
-    background-color: lightblue;
     background-image: url("pictures/wallpaper10.png");
     background-size: cover;
-    z-index: -1;
+    z-index: -1; /*places background behind all other objects on the site*/
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
-
-p {
-
-}
-
-div{
+div{ /*apply font to div elements*/
 	font-family: Demo_ConeriaScript;
     src: url(coneria-script/Demo_ConeriaScript.ttf);
     font-size: 20px;
 }
 
 
-.cardSize{ /*alternatives large/med*/
-    height: 200px; /*240*/ /*200*/
-    width: 120px; /*135*/  /*120*/
+.cardSize{ 
+    height: 200px; 
+    width: 120px; 
     border-radius: 11px;
 }
 
