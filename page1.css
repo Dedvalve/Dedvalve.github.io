@@ -41,7 +41,7 @@ div{ /*apply font to div elements*/
 
 /*GIVES BORDERS TO THE PROJECT CARDS*/
 .arena > div{
-	border: 2px solid orange;
+	border: 2px solid blue;
 }
 
 
