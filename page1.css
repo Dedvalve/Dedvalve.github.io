@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("wallpaper2.jpg");
+    background-image: url("pictures/wallpaper10.png");
     background-size: cover;
     z-index: -1; /*places background behind all other objects on the site*/
 }
@@ -30,12 +30,12 @@ div{ /*apply font to div elements*/
 	margin-left: 0%; /*gives space from the left/right */
 	margin-right: 0%;
 	border-style: solid;
-	border-color: red;
+	border-color: yellow;
 }
 
 @media only screen and (max-width: 600px){ /*when the width is X pixels or less change the structure of the page*/
 	.arena {
-		border-color: yellow;
+		border-color: pink;
 	}
 }
 
