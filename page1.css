@@ -14,18 +14,18 @@ body{
 .col-xs-4{
 	background-color: orange;
 	border-style: solid;
-	/*height: 25vh;*/
+	height: 25vh;
 }
 
 .col-xs-6{
 	background-color: pink;
 	border-style: solid;
-	/*height: 25vh;*/
+	height: 25vh;
 }
 
 .col-xs-12{
 	background-color: yellow;
 	border-style: solid;
-	/*height: 25vh;*/
+	height: 25vh;
 }
 
