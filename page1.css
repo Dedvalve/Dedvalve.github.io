@@ -6,17 +6,9 @@ body{
 	height: 100%;
 }
 
-/*
-.noPadding{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-*/
-
 .cardSize{
-	height: 200px; 
-    width: 120px; 
-    border-radius: 11px;
+    height: 100px;
+    width: 60px;
 }
 
 .col-xs-4{
