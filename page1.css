@@ -1,5 +1,13 @@
 body{
-	background-image: linear-gradient(-90deg, brown, indigo);
+	/*background-image: linear-gradient(-90deg, brown, indigo);*/
+}
+
+.container-fluid{
+	height: 100%;
+}
+
+.row{
+	height: 100%;
 }
 
 .cardSize{
@@ -7,3 +15,22 @@ body{
     width: 120px; 
     border-radius: 11px;
 }
+
+.col-xs-4{
+	background-color: orange;
+	border-style: solid;
+
+}
+
+.col-xs-6{
+	background-color: pink;
+	border-style: solid;
+
+}
+
+.col-xs-12{
+	background-color: yellow;
+	border-style: solid;
+
+}
+
