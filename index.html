@@ -26,7 +26,7 @@
   <!--(1/2 body)the body is broken into a quad for mobile-->
   <div class="row"> 
     <div class="col-xs-6">
-    	<img src="cardback3.jpg" alt="project manager" class="cardSize">
+    		<img src="cardback3.jpg" alt="project manager" class="cardSize" id="theManager" onclick="managerLink()">
     	<div class="centered">Project Manager</div>
     </div>
     <div class="col-xs-6">
@@ -38,7 +38,7 @@
   <!--(2/2 body)-->
   <div class="row"> 
     <div class="col-xs-6">
-    	<img src="cardback3.jpg" alt="educator" class="cardSize">
+    	<img src="cardback3.jpg" alt="educator" class="cardSize" id="theEducator" onclick="educatorLink()">
     	<div class="centered">Educator</div>
     </div>
     <div class="col-xs-6">
@@ -47,7 +47,9 @@
     </div>
   </div>
 
-  <!--footer-->
+<!--*** *** ***
+	FOOTER
+*** *** ***-->
   <div class="row"> 
     <div class="col-xs-4">
     	<img src="cardback3cut.jpg" alt="about" class="cardSize">
@@ -65,11 +67,21 @@
 
 </div>
 
-<!--*** *** ***
-	FOOTER
-*** *** ***-->
 
-
+<script type="text/javascript">
+	function managerLink()
+	{
+		document.getElementById("theManager").onclick = function () {
+        	location.href = "https://www.google.com";
+    	};
+	}
+	function educatorLink()
+	{
+		document.getElementById("theEducator").onclick = function () {
+        	location.href = "https://www.bing.com";
+    	};
+	}
+</script>
 
 <!-- BOOTSTRAP -->
 <!-- jQuery library -->
