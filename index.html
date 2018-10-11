@@ -30,7 +30,7 @@
     	<div class="centered">Project Manager</div>
     </div>
     <div class="col-xs-6">
-    	<img src="cardback3.jpg" alt="activist" class="cardSize">
+    	<img src="cardback3.jpg" alt="activist" class="cardSize" id="theActivist" onclick="educatorLink()">
     	<div class="centered">Activist</div>
     </div>
   </div>
@@ -42,7 +42,7 @@
     	<div class="centered">Educator</div>
     </div>
     <div class="col-xs-6">
-    	<img src="cardback3.jpg" alt="programmer" class="cardSize">
+    	<img src="cardback3.jpg" alt="programmer" class="cardSize" id="theProgrammer" onclick="educatorLink()">
     	<div class="centered">Programmer</div>
     </div>
   </div>
@@ -79,6 +79,18 @@
 	{
 		document.getElementById("theEducator").onclick = function () {
         	location.href = "https://www.bing.com";
+    	};
+	}
+	function programmerLink()
+	{
+		document.getElementById("theProgrammer").onclick = function () {
+        	location.href = "https://www.yahoo.com";
+    	};
+	}
+	function activistLink()
+	{
+		document.getElementById("theActivist").onclick = function () {
+        	location.href = "https://www.aol.com";
     	};
 	}
 </script>
