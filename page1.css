@@ -15,17 +15,26 @@ body{
 	background-color: orange;
 	border-style: solid;
 	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .col-xs-6{
 	background-color: pink;
 	border-style: solid;
 	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .col-xs-12{
 	background-color: yellow;
 	border-style: solid;
 	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
