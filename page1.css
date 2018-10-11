@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "corneria";
+    src: url(coneria-script/Demo_ConeriaScript.ttf) format("truetype");
+}
+
 body{
 	/*background-image: linear-gradient(-90deg, brown, indigo);*/
 }
@@ -7,35 +12,68 @@ body{
 }
 
 .cardSize{
-    height: 500px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 500px;
 }
 
-.col-xs-4{
-	background-color: orange;
+.col-xs-4{ /*footer row*/
+	background-color: brown;
 	border-style: solid;
+	border-color: red;
 	height: 20vh;
 	/*centers img in parent container*/
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
+	/*for the text that displays on top of cards*/
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-size: 6vw;
+	font-family: "corneria";
 }
 
-.col-xs-6{
+.col-xs-6{/*body*/
 	background-color: pink;
+	background-image: linear-gradient(-90deg, brown, purple);
 	border-style: solid;
+	border-color: red;
 	height: 35vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*for the text that displays on top of cards*/
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-size: 6vw;
+	font-family: "corneria";
 }
 
-.col-xs-12{
+.col-xs-12{/*header row*/
 	background-color: yellow;
+	background-image: linear-gradient(-90deg, red, green);
 	border-style: solid;
+	border-color: red;
 	height: 10vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*for the text that displays on top of cards*/
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-size: 6vw;
+	font-family: "corneria";
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
