@@ -78,3 +78,10 @@ body{
     transform: translate(-50%, -50%);
 }
 
+/*for tilting the cards*/
+.tiltright{
+	transform: rotate(20deg);
+}
+.tiltleft{
+	transform: rotate(-20deg);
+}
