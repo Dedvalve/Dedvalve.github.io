@@ -4,7 +4,7 @@
 }
 
 body{
-	/*background-image: linear-gradient(-90deg, brown, indigo);*/
+	background-image: url("wood.jpg");
 }
 
 .container-fluid{
@@ -20,7 +20,7 @@ body{
 }
 
 .col-xs-4{ /*footer row*/
-	background-color: brown;
+	/*background-color: brown;*/
 	border-style: solid;
 	border-color: red;
 	height: 20vh;
@@ -37,8 +37,7 @@ body{
 }
 
 .col-xs-6{/*body*/
-	background-color: pink;
-	background-image: linear-gradient(-90deg, brown, purple);
+	/*background-color: pink;*/
 	border-style: solid;
 	border-color: red;
 	height: 35vh;
@@ -54,8 +53,7 @@ body{
 }
 
 .col-xs-12{/*header row*/
-	background-color: yellow;
-	background-image: linear-gradient(-90deg, red, green);
+	/*background-color: yellow;*/
 	border-style: solid;
 	border-color: red;
 	height: 10vh;
