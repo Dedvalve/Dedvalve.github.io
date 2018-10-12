@@ -2,6 +2,10 @@
     font-family: "corneria";
     src: url(coneria-script/Demo_ConeriaScript.ttf) format("truetype");
 }
+@font-face {
+	font-family: "alexandria";
+    src: url(alexandria/AlexandriaFLF.ttf) format("truetype");
+}
 
 body{
 	  background: linear-gradient(brown, hotpink);
@@ -83,11 +87,6 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  /*font-size: 6vw;*/
-  font-family: "corneria";
 }
 
 .cardSizeXL{
@@ -96,5 +95,13 @@ body{
     max-width: 750px;
     max-height: 1200px;
     border-radius: 70px;
+}
+
+.cardXLtext{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-size: 3vw;
+  font-family: "alexandria";
 }
 
