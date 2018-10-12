@@ -77,10 +77,20 @@ body{
     transform: translate(-50%, -50%);
 }
 
-/*for tilting the cards*/
-.tiltright{
-	transform: rotate(20deg);
+.centerCard{
+  position: absolute;
+  top:45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-.tiltleft{
-	transform: rotate(-20deg);
+
+.cardSizeXL{
+	height: 100%;
+    width: 100%;
+    max-width: 750px;
+    max-height: 1200px;
+    border-radius: 70px;
 }
+
