@@ -10,8 +10,8 @@
 <body>
 
 <!--the card that expands to full screen when you click on a card-->
-<div>
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard">
+<div id="cardXL">
+<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShow()">
 <div class="cardXLtext centerCard" style="z-index: 1;">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
 </div>
 
@@ -29,7 +29,7 @@
   <!--(1/2 body)the body is broken into a quad for mobile-->
   <div class="row"> 
     <div class="col-xs-6">
-    		<img src="cardback3.jpg" alt="project manager" class="cardSize" id="theManager" onclick="managerLink()">
+    		<img src="cardback3.jpg" alt="project manager" class="cardSize" id="theManager" onclick="hideShow()">
     	<div class="centered">Project Manager</div>
     </div>
     <div class="col-xs-6">
@@ -95,6 +95,14 @@
 		document.getElementById("theActivist").onclick = function () {
         	location.href = "https://www.aol.com";
     	};
+	}
+	function hideShow() {
+		var x = document.getElementById("cardXL");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 	}
 </script>
 
