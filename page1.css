@@ -30,13 +30,13 @@ body{
 	border-color: red;
 	height: 20vh;
 	/*centers img in parent container*/
-	display: flex;
+	display: flex; /*flex needed so we can center img*/
 	align-items: center;
 	justify-content: flex-end;
 	/*for the text that displays on top of cards*/
 	text-align: center;
 	color: white;
-	font-size: 16px;
+	font-size: 16px;/*backup font size */
 	font-size: 6vw;
 	font-family: "corneria";
 }
@@ -74,14 +74,14 @@ body{
 }
 
 /* Centered text */
-.centered {
+.centered { /*positions the front side card*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.centerCard{
+.centerCard{ /*centers the card within its own grid. */
   position: absolute;
   top:45%;
   left: 50%;
@@ -90,7 +90,7 @@ body{
   
 }
 
-.cardSizeXL{
+.cardSizeXL{ /*for the text that appears on the BACKside card*/
 	height: 100%;
     width: 100%;
     max-width: 750px;
@@ -98,11 +98,11 @@ body{
     border-radius: 70px;
 }
 
-.cardXLtext{
+.cardXLtext{ /*for the text that appears on the FRONTside card*/
   text-align: center;
   color: black;
   font-size: 30px;
-  font-size: 3vw;
+  font-size: 3.2vw;
   font-family: "alexandria";
 }
 

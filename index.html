@@ -9,17 +9,20 @@
 </head>
 <body>
 
-<!--the card that expands to full screen when you click on a card-->
+	<!--*** *** ***	FRONT SIDE CARDS
+	INFORMATION ON THE -FRONT- OF CARDS THAT SHOW UP WHEN CARD IS TAPPED
+	*** *** ***-->
+
 <!--Project Manager Card Info-->
-<div id="pmCard" style="display: none;">
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowPM()">
+<div id="pmCard" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
+<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowPM()"> <!--adds onclick functionality to card img-->
 <div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
 </div>
 
 <!--Activist Card Info-->
 <div id="actvCard" style="display: none;">
 <img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowActv()">
-<div class="cardXLtext centerCard">Growing up in poverty in both the South Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
+<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
 </div>
 
 <!--Educator Card Info-->
@@ -45,13 +48,13 @@
     </div>
   </div>
 
-  <!--(1/2 body)the body is broken into a quad for mobile-->
+  <!--(1/2 body)the body is broken into a quad-like structure for mobile-->
   <div class="row"> 
-    <div class="col-xs-6">
+    <div class="col-xs-6"> <!--PROJECT MANAGER CARD-->
     		<img src="cardback3.jpg" alt="project manager" class="cardSize" id="theManager" onclick="hideShowPM()">
     	<div class="centered">Project Manager</div>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-6"> <!--ACTIVIST CARD-->
     	<img src="cardback3.jpg" alt="activist" class="cardSize" id="theActivist" onclick="hideShowActv()">
     	<div class="centered">Activist</div>
     </div>
@@ -59,11 +62,11 @@
 
   <!--(2/2 body)-->
   <div class="row"> 
-    <div class="col-xs-6">
+    <div class="col-xs-6"> <!--EDUCATOR CARD-->
     	<img src="cardback3.jpg" alt="educator" class="cardSize" id="eduCard" onclick="hideShowEdu()">
     	<div class="centered">Educator</div>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-6"> <!--PROGAMMERS CARD-->
     	<img src="cardback3.jpg" alt="programmer" class="cardSize" id="pgmmrCard" onclick="hideShowPgmmr()">
     	<div class="centered">Programmer</div>
     </div>
