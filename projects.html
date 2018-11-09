@@ -13,28 +13,28 @@
 	*** *** ***-->
 	
 	<!--FRONTSIDE CARD IMG-->
-	<div style="display:none" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default-->
+	<div style="display:none" id="frontsideCard"> <!--hide frontside card by default   onclick="hideShowCard()"-->
 		<img src="cardtmp4.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
 	</div>
 
 	<!--FRONTSIDE CARD TXT-->
 	<!--TVLand Card txt-->
-	<div class="tvlandCard" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
+	<div class="tvlandCard cardtxt" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
 		<div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
 	</div>
 			
 	<!--Converse Card txt-->
-	<div class="converseCard" style="display: none;">
+	<div class="converseCard cardtxt" style="display: none;">
 		<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
 	</div>
 			
 	<!--Nick Card txt-->
-	<div class="nickCard" style="display: none;">
+	<div class="nickCard cardtxt" style="display: none;">
 		<div class="cardXLtext centerCard">I spent close to 4 years teaching digital literacy, game design and  programming languages to youth and young adults. My specialty was in emerging technolgy such as ar, vr, drones, etc. Their also taught skills such as public speaking, how to nail an interview and how to promote yourself in todays business environment. My priority has always been to breed the next generation of programmers to be more conscious and responsible about their fellow man, community and environment.</div>
 	</div>
 			
 	<!--Monroe Card txt-->
-	<div class="monroeCard" style="display: none;">
+	<div class="monroeCard cardtxt" style="display: none;">
 		<div class="cardXLtext centerCard">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
 	</div>
 	
@@ -106,12 +106,11 @@
 		function hideShowCard() 
 		{
 			var x = document.getElementById("frontsideCard");
-			if (x.style.display === "none") { 	//if hidden
+
+			if (x.style.display === "none") { 	//if hidden f.side card is hidden...
 				x.style.display = "block";		//display f.side card
-				//cardText.style.display = "block";
 			} else {
-				x.style.display = "none";		//else hide
-				//cardText.style.display = "none";
+				x.style.display = "none";		//else hide f.side card
 			}
 		}
 
@@ -121,16 +120,19 @@
 			var cardClass = ""; //empty var to take in a string
 			var cardClass = document.getElementById(clicked_id).id; //gets the id of a card as a string
 			var cardText = document.getElementsByClassName(cardClass); //finds all elements with the class name thats same as id
-			
+			var fsideCard = document.getElementById("frontsideCard");
+
 			console.log(cardText[0]); //cardText becomes an array so we must always reference the first item in it (which is the txt)
-								
+
+
 			if (cardText[0].style.display === "none") { 	//if hidden
 				cardText[0].style.display = "block";		//display
+				fsideCard.style.display = "block";
 			} else {
 				cardText[0].style.display = "none";		//else hide
-				//cardClass = "";							//reset this var
+				fsideCard.style.display = "none";
 			}
-			hideShowCard();
+			//hideShowCard();
 		}
 	</script>
 
