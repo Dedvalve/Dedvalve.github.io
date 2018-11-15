@@ -51,8 +51,17 @@
 	 <div class="row"> 
 		 	<!--***TVLAND CARD***-->
 			<div class="col-xs-6">
-					<!--id is used for function 'onclick displays this img true/false'-->
-					<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard" onclick="reply_click(this.id)">
+					<div class="flip-container" id="flip-toggle" onclick="document.querySelector('#flip-toggle').classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!--id is used for function 'onclick displays this img true/false'-->
+									<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard" onclick="reply_click(this.id)">	
+								</div>
+								<div class="back">
+									<img src="cardtmp4.jpg" class="cardSize">
+								</div>
+							</div>
+						</div>
 				<div class="centered">TVLand</div>
 			</div>
 			<!--***CONVERSE CARD***-->
