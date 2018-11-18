@@ -51,17 +51,8 @@
 	 <div class="row"> 
 		 	<!--***TVLAND CARD***-->
 			<div class="col-xs-6">
-					<div class="flip-container" id="flip-toggle" onclick="document.querySelector('#flip-toggle').classList.toggle('hover');">
-							<div class="flipper">
-								<div class="front"><!--content that appears on the front of flip animation-->
-									<!--id is used for function 'onclick displays this img true/false'-->
-									<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard">	
-								</div>
-								<div class="back"><!--content that apears on back of the flip animation-->
-									<img src="cardtmp4.jpg" class="cardSize">
-								</div>
-							</div>
-						</div>
+					<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard">	
+					<div class="centered">Project Manager</div>
 				<div class="centered">TVLand</div>
 			</div>
 			<!--***CONVERSE CARD***-->
@@ -112,31 +103,35 @@
 </div>
 	  
 	 <script type="text/javascript">
+		var currentCard = ""; //a global empty var that will collect the id of the card you clicked
+
 		function hideShowCard() 
 		{
-			var x = document.getElementById("frontsideCard");
+			var x = document.getElementById("frontsideCard"); //find the front side card img
+			var findCard = document.getElementsByClassName(currentCard); //finds all elements with the class name thats same as id
 
 			if (x.style.display === "none") { 	//if hidden f.side card is hidden...
 				x.style.display = "block";		//display f.side card
+				findCard.style.display = "block";
 			} else {
 				x.style.display = "none";		//else hide f.side card
+				findCard.style.display = "none";
 			}
 		}
 
 		function reply_click(clicked_id) //get the id of the card that you clicked
 		{			
 			var cardID = document.getElementById("clicked_id"); //var to store the id of the card you clicked
-			var cardClass = ""; //empty var to take in a string
 			var cardClass = document.getElementById(clicked_id).id; //gets the id of a card as a string
 			var cardText = document.getElementsByClassName(cardClass); //finds all elements with the class name thats same as id
 			var fsideCard = document.getElementById("frontsideCard");
-
-			console.log(cardText[0]); //cardText becomes an array so we must always reference the first item in it (which is the txt)
-
+			
+			//console.log("the card txt is" cardText[0]); //cardText becomes an array so we must always reference the first item in it (which is the txt)
 
 			if (cardText[0].style.display === "none") { 	//if hidden
 				cardText[0].style.display = "block";		//display
 				fsideCard.style.display = "block";
+				currentCard = cardClass; //passes the id off to a global var
 			} else {
 				cardText[0].style.display = "none";		//else hide
 				fsideCard.style.display = "none";
