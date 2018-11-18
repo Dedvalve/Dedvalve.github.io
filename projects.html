@@ -13,28 +13,28 @@
 	*** *** ***-->
 	
 	<!--FRONTSIDE CARD IMG-->
-	<div style="display:none" id="frontsideCard"> <!--hide frontside card by default   onclick="hideShowCard()"-->
+	<div style="display:none" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
 		<img src="cardtmp4.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
 	</div>
 
 	<!--FRONTSIDE CARD TXT-->
 	<!--TVLand Card txt-->
-	<div class="tvlandCard cardtxt" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
+	<div class="tvlandCard cardtxt" onclick="hideShowCard()" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
 		<div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
 	</div>
 			
 	<!--Converse Card txt-->
-	<div class="converseCard cardtxt" style="display: none;">
+	<div class="converseCard cardtxt" onclick="hideShowCard()" style="display: none;">
 		<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
 	</div>
 			
 	<!--Nick Card txt-->
-	<div class="nickCard cardtxt" style="display: none;">
+	<div class="nickCard cardtxt" onclick="hideShowCard()" style="display: none;">
 		<div class="cardXLtext centerCard">I spent close to 4 years teaching digital literacy, game design and  programming languages to youth and young adults. My specialty was in emerging technolgy such as ar, vr, drones, etc. Their also taught skills such as public speaking, how to nail an interview and how to promote yourself in todays business environment. My priority has always been to breed the next generation of programmers to be more conscious and responsible about their fellow man, community and environment.</div>
 	</div>
 			
 	<!--Monroe Card txt-->
-	<div class="monroeCard cardtxt" style="display: none;">
+	<div class="monroeCard cardtxt" onclick="hideShowCard()" style="display: none;">
 		<div class="cardXLtext centerCard">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
 	</div>
 	
@@ -51,8 +51,7 @@
 	 <div class="row"> 
 		 	<!--***TVLAND CARD***-->
 			<div class="col-xs-6">
-					<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard">	
-					<div class="centered">Project Manager</div>
+				<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard">	
 				<div class="centered">TVLand</div>
 			</div>
 			<!--***CONVERSE CARD***-->
@@ -115,7 +114,7 @@
 				findCard.style.display = "block";
 			} else {
 				x.style.display = "none";		//else hide f.side card
-				findCard.style.display = "none";
+				findCard[0].style.display = "none";
 			}
 		}
 
@@ -136,7 +135,6 @@
 				cardText[0].style.display = "none";		//else hide
 				fsideCard.style.display = "none";
 			}
-			//hideShowCard();
 		}
 	</script>
 
