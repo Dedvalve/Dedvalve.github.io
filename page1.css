@@ -8,7 +8,7 @@
 }
 
 body{
-	  background: linear-gradient(brown, blue);
+	  background: linear-gradient(pink, orange);
 }
 
 .container-fluid{
@@ -151,4 +151,11 @@ body{
 
 .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
 	transform: rotateY(180deg);
+}
+
+.sexyButton{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(800%, -50%);
 }

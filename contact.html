@@ -10,5 +10,42 @@
 </head>
 <body>
 	<p>contact page</p>
+<div class="flip-container" id="flip-toggle"">
+	<div class="flipper">
+			<div class="front"><!--content that appears on the front of flip animation-->	
+				<img src="cardback3.jpg" alt="TVLand" class="cardSize" id="tvlandCard">	
+			</div>
+		<div class="back"><!--content that apears on back of the flip animation-->
+			<img src="cardtmp4.jpg" class="cardSize">
+		</div>
+	</div>
+</div>
+
+<button onclick="document.querySelector('flip-toggle').classList.toggle('hover');" class="sexyButton">Toggle flip</button>
+
+<!--*** *** ***
+	FOOTER
+*** *** ***-->
+<div class="row"> 
+		<div class="col-xs-4"> <!--ABOUT CARD-->
+			<a href="index.html">
+				<img src="cardback3cut.jpg" alt="about" class="cardSize">
+			</a>
+			<div class="centered">About</div>
+		</div>
+		<div class="col-xs-4"> <!--PROJECTS CARD-->
+			<a href="projects.html">
+				<img src="cardback3cut.jpg" alt="projects" class="cardSize">
+				<div class="centered">Projects</div>
+			</a>
+		</div>
+		<div class="col-xs-4"> <!--CONTACT CARD-->
+			<a href="contact.html">
+				<img src="cardback3cut.jpg" alt="contact" class="cardSize">
+				<div class="centered">Contact</div>
+			</a>
+		</div>
+	  </div>
+
 </body>
 </html>
