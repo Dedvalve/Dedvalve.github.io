@@ -5,146 +5,144 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--link your css page-->
 	<link rel="stylesheet" type="text/css" href="page1.css">
-	<!--links to contact.html-->
-	<link rel="stylesheet" type="text/css" href="contact.html">
-	<title>Beans Site</title>
+	<title>Projects</title>
 </head>
 <body>
-
 	<!--*** *** ***	FRONT SIDE CARDS
 	INFORMATION ON THE -FRONT- OF CARDS THAT SHOW UP WHEN CARD IS TAPPED
 	*** *** ***-->
+	
+	<!--FRONTSIDE CARD IMG-->
+	<div style="display:none" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
+		<img src="cardtmp4.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
+	</div>
 
-<!--Project Manager Card txt-->
-<div id="pmCard" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowPM()"> <!--adds onclick functionality to card img-->
-<div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
-</div>
-
-<!--Activist Card txt-->
-<div id="actvCard" style="display: none;">
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowActv()">
-<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
-</div>
-
-<!--Educator Card txt-->
-<div id="eduCard" style="display: none;">
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowEdu()">
-<div class="cardXLtext centerCard">I spent close to 4 years teaching digital literacy, game design and  programming languages to youth and young adults. My specialty was in emerging technolgy such as ar, vr, drones, etc. Their also taught skills such as public speaking, how to nail an interview and how to promote yourself in todays business environment. My priority has always been to breed the next generation of programmers to be more conscious and responsible about their fellow man, community and environment.</div>
-</div>
-
-<!--Programmer Card txt-->
-<div id="pgmmrCard" style="display: none;">
-<img src="cardtmp4.jpg" class="cardSizeXL centerCard" onclick="hideShowPgmmr()">
-<div class="cardXLtext centerCard">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
-</div>
-
-<!--*** *** ***
-	BODY
-*** *** ***-->
+	<!--FRONTSIDE CARD TXT-->
+	<!--Project Manager Card txt-->
+	<div class="pmCard cardtxt" onclick="hideShowCard()" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
+		<div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
+	</div>
+			
+	<!--Activist Card txt-->
+	<div class="actvstCard cardtxt" onclick="hideShowCard()" style="display: none;">
+		<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
+	</div>
+			
+	<!--Educator Card txt-->
+	<div class="eduCard cardtxt" onclick="hideShowCard()" style="display: none;">
+		<div class="cardXLtext centerCard">I spent close to 4 years teaching digital literacy, game design and  programming languages to youth and young adults. My specialty was in emerging technolgy such as ar, vr, drones, etc. Their also taught skills such as public speaking, how to nail an interview and how to promote yourself in todays business environment. My priority has always been to breed the next generation of programmers to be more conscious and responsible about their fellow man, community and environment.</div>
+	</div>
+			
+	<!--Programmer Card txt-->
+	<div class="prgmrCard cardtxt" onclick="hideShowCard()" style="display: none;">
+		<div class="cardXLtext centerCard" onclick="hideShowCard()">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
+	</div>
+	
 <div class="container-fluid">
-  <!--the header-->
-  <div class="row"> 
-    <div class="col-xs-12">
-    	<h1>Welcome! I'm David</h1>
-    </div>
-  </div>
+	<!--the header-->
+	<div class="row"> 
+		<div class="col-xs-12">
+			<h1>Welcome! I'm David</h1>
+		</div>
+	</div>
 
-  <!--(1/2 body)the body is broken into a quad-like structure for mobile-->
-  <div class="row"> 
-    <div class="col-xs-6"> <!--PROJECT MANAGER CARD-->
-    		<img src="cardback3.jpg" alt="project manager" class="cardSize" id="theManager" onclick="hideShowPM()">
-    	<div class="centered">Project Manager</div>
-    </div>
-    <div class="col-xs-6"> <!--ACTIVIST CARD-->
-    	<img src="cardback3.jpg" alt="activist" class="cardSize" id="theActivist" onclick="hideShowActv()">
-    	<div class="centered">Activist</div>
-    </div>
-  </div>
+	<!--***BACKSIDE CARDS***-->
+	 <!--(1/2 body)the body is broken into a quad-like structure for mobile-->
+	 <div class="row"> 
+		 	<!--***PROJECT MANAGER CARD***-->
+			<div class="col-xs-6">
+				<img src="cardback3.jpg" alt="Project Manager" class="cardSize" id="pmCard" onclick="reply_click(this.id)">	
+				<div class="centered">Project Manager</div>
+			</div>
+			<!--***Activist CARD***-->
+			<div class="col-xs-6">
+				<img src="cardback3.jpg" alt="Activist" class="cardSize" id="actvstCard" onclick="reply_click(this.id)">
+				<div class="centered">Activist</div>
+			</div>
+		  </div>
+		
+		  <!--(2/2 body)-->
+		  <div class="row"> 
+			  <!--***Educator CARD***-->
+			<div class="col-xs-6">
+				<img src="cardback3.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
+				<div class="centered">Educator</div>
+			</div>
+			<!--***Programmer CARD***-->
+			<div class="col-xs-6">
+				<img src="cardback3.jpg" alt="Programmer" class="cardSize" id="prgmrCard" onclick="reply_click(this.id)">
+				<div class="centered">Programmer</div>
+			</div>
+		  </div>
 
-  <!--(2/2 body)-->
-  <div class="row"> 
-    <div class="col-xs-6"> <!--EDUCATOR CARD-->
-    	<img src="cardback3.jpg" alt="educator" class="cardSize" id="eduCard" onclick="hideShowEdu()">
-    	<div class="centered">Educator</div>
-    </div>
-    <div class="col-xs-6"> <!--PROGAMMERS CARD-->
-    	<img src="cardback3.jpg" alt="programmer" class="cardSize" id="pgmmrCard" onclick="hideShowPgmmr()">
-    	<div class="centered">Programmer</div>
-    </div>
-  </div>
 
 <!--*** *** ***
 	FOOTER
 *** *** ***-->
-  <div class="row"> 
-    <div class="col-xs-4"> <!--ABOUT CARD-->
-    	<a href="index.html">
-    		<img src="cardback3cut.jpg" alt="about" class="cardSize">
-    	</a>
-    	<div class="centered">About</div>
-    </div>
-    <div class="col-xs-4"> <!--PROJECTS CARD-->
-    	<a href="projects.html">
-    		<img src="cardback3cut.jpg" alt="projects" class="cardSize">
-    		<div class="centered">Projects</div>
-    	</a>
-    </div>
-    <div class="col-xs-4"> <!--CONTACT CARD-->
-    	<a href="contact.html">
-    		<img src="cardback3cut.jpg" alt="contact" class="cardSize">
-    		<div class="centered">Contact</div>
-    	</a>
-    </div>
-  </div>
-
+	<div class="row"> 
+		<div class="col-xs-4"> <!--ABOUT CARD-->
+			<a href="index.html">
+				<img src="cardback3cut.jpg" alt="about" class="cardSize">
+			</a>
+			<div class="centered">About</div>
+		</div>
+		<div class="col-xs-4"> <!--PROJECTS CARD-->
+			<a href="projects.html">
+				<img src="cardback3cut.jpg" alt="projects" class="cardSize">
+				<div class="centered">Projects</div>
+			</a>
+		</div>
+		<div class="col-xs-4"> <!--CONTACT CARD-->
+			<a href="contact.html">
+				<img src="cardback3cut.jpg" alt="contact" class="cardSize">
+				<div class="centered">Contact</div>
+			</a>
+		</div>
+	  </div>
 </div>
+	  
+	 <script type="text/javascript">
+		var currentCard = ""; //a global empty var that will collect the id of the card you clicked
 
+		function hideShowCard() 
+		{
+			var x = document.getElementById("frontsideCard"); //find the front side card img
+			var findCard = document.getElementsByClassName(currentCard); //finds all elements with the class name thats same as id
 
-<script type="text/javascript">
-	//each of these functions will hide/show a card specific to their subject
-	function hideShowPM() 
-	{
-		var x = document.getElementById("pmCard");
-    	if (x.style.display === "none") {
-        	x.style.display = "block";
-    	} else {
-        	x.style.display = "none";
-    	}
-	}
-	function hideShowActv() 
-	{
-		var x = document.getElementById("actvCard");
-    	if (x.style.display === "none") {
-        	x.style.display = "block";
-    	} else {
-        	x.style.display = "none";
-    	}
-	}
-	function hideShowEdu() 
-	{
-		var x = document.getElementById("eduCard");
-    	if (x.style.display === "none") {
-        	x.style.display = "block";
-    	} else {
-        	x.style.display = "none";
-    	}
-	}
-	function hideShowPgmmr() 
-	{
-		var x = document.getElementById("pgmmrCard");
-    	if (x.style.display === "none") {
-        	x.style.display = "block";
-    	} else {
-        	x.style.display = "none";
-    	}
-	}
-</script>
+			if (x.style.display === "none") { 	//if hidden f.side card is hidden...
+				x.style.display = "block";		//display f.side card
+				findCard.style.display = "block";
+			} else {
+				x.style.display = "none";		//else hide f.side card
+				findCard[0].style.display = "none";
+			}
+		}
 
-<!-- BOOTSTRAP -->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		function reply_click(clicked_id) //get the id of the card that you clicked
+		{			
+			var cardID = document.getElementById("clicked_id"); //var to store the id of the card you clicked
+			var cardClass = document.getElementById(clicked_id).id; //gets the id of a card as a string
+			var cardText = document.getElementsByClassName(cardClass); //finds all elements with the class name thats same as id
+			var fsideCard = document.getElementById("frontsideCard");
+			
+			//console.log("the card txt is" cardText[0]); //cardText becomes an array so we must always reference the first item in it (which is the txt)
+
+			if (cardText[0].style.display === "none") { 	//if hidden
+				cardText[0].style.display = "block";		//display
+				fsideCard.style.display = "block";
+				currentCard = cardClass; //passes the id off to a global var
+			} else {
+				cardText[0].style.display = "none";		//else hide
+				fsideCard.style.display = "none";
+			}
+		}
+	</script>
+
+	<!-- BOOTSTRAP -->
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
