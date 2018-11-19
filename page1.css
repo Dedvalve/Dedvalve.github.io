@@ -26,9 +26,9 @@ body{
 
 .col-xs-4{ /*footer row*/
 	/*background-color: brown;*/
-	border-style: solid;
+	/*border-style: solid;*/
 	border-color: red;
-	height: 20vh;
+	height: 10vh;
 	/*centers img in parent container*/
 	display: flex; /*flex needed so we can center img*/
 	align-items: center;
@@ -43,9 +43,9 @@ body{
 
 .col-xs-6{/*body*/
 	/*background-color: pink;*/
-	border-style: solid;
+	/*border-style: solid;*/
 	border-color: red;
-	height: 35vh;
+	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -59,8 +59,8 @@ body{
 
 .col-xs-12{/*header row*/
 	/*background-color: yellow;*/
-	border-style: solid;
-	border-color: red;
+	/*border-style: solid;*/
+	/*border-color: red;*/
 	height: 10vh;
 	display: flex;
 	align-items: center;
