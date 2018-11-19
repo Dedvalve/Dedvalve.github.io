@@ -13,7 +13,7 @@
 	*** *** ***-->
 	
 	<!--FRONTSIDE CARD IMG-->
-	<div style="display:none" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
+	<div style="display:none;" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
 		<img src="cardtmp4.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
 	</div>
 
@@ -34,8 +34,8 @@
 	</div>
 			
 	<!--Programmer Card txt-->
-	<div class="prgmrCard cardtxt" onclick="hideShowCard()" style="display: none;">
-		<div class="cardXLtext centerCard" onclick="hideShowCard()">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
+	<div class="pgrmrCard cardtxt" onclick="hideShowCard()" style="display: none;">
+		<div class="cardXLtext centerCard">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
 	</div>
 	
 <div class="container-fluid">
@@ -70,7 +70,7 @@
 			</div>
 			<!--***Programmer CARD***-->
 			<div class="col-xs-6">
-				<img src="cardback3.jpg" alt="Programmer" class="cardSize" id="prgmrCard" onclick="reply_click(this.id)">
+				<img src="cardback3.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
 				<div class="centered">Programmer</div>
 			</div>
 		  </div>
@@ -135,6 +135,8 @@
 				cardText[0].style.display = "none";		//else hide
 				fsideCard.style.display = "none";
 			}
+
+			console.log(currentCard);
 		}
 	</script>
 
