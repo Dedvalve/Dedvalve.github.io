@@ -18,8 +18,8 @@ body{
 .cardSize{
     height: 100%;
     width: 100%;
-    max-width: 370px;
-    max-height: 570px;
+    max-width: 400px;
+    max-height: 630px;
     border-radius: 30px;
 }
 
