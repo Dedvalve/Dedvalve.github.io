@@ -111,6 +111,8 @@ body{
   border-style: solid;
   height: 1000px; /*the size of the text box*/
   width: 600px;
+  color: cadetblue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
