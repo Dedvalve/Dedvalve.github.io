@@ -9,8 +9,51 @@
 
 
 body{
-	  background: linear-gradient(rgb(60, 5, 112), rgb(50, 70, 156));
+  color: #fff;
+	background: linear-gradient(-45deg, #B33C86, #190E4F, #03012C, #EA638C);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
+
+/* card animation start */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* end of card animation */
 
 .container-fluid{
 	height: 100%;
@@ -54,10 +97,11 @@ body{
 	justify-content: center;
 	/*for the text that displays on top of cards*/
 	text-align: center;
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(255, 53, 53);
 	font-size: 16px;
 	font-size: 6vw;
-	font-family: "corneria";
+  font-family: "corneria";
 }
 
 .col-xs-12{/*header row*/
@@ -69,20 +113,22 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*for the text that displays on top of cards*/
+	/*for the text that displays on header*/
 	text-align: center;
-	color: white;
+  color: white;
 	font-size: 16px;
 	font-size: 6vw;
 	font-family: "corneria";
 }
 
 /* Centered text */
-.centered { /*positions the front side card*/
+.centered { /*positions text the front side card*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: yellow;
 }
 
 .centerCard{ /*centers the card within its own grid. */
@@ -111,110 +157,6 @@ body{
   border-style: solid;
   height: 1000px; /*the size of the text box*/
   width: 600px;
-  color: cadetblue;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-
-/*STARRY BACKGROUND CSS*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-.stars, .twinkling, .clouds {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.stars {
-  z-index: 0;
-  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
-}
-
-.twinkling {
-  z-index: 1;
-  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.clouds {
-  z-index: 2;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
-  animation: move-clouds-back 200s linear infinite;
-}
-
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgb(113, 147, 221);
 }

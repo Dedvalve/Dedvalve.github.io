@@ -18,7 +18,7 @@
 	
 	<!--FRONTSIDE CARD IMG-->
 	<div style="display:none;" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
-		<img src="starsTarot.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
+		<img src="backTarot.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
 	</div>
 
 	<!--FRONTSIDE CARD TXT-->
@@ -70,12 +70,12 @@
 		  <div class="row"> 
 			  <!--***Educator CARD***-->
 			<div class="col-xs-6">
-				<img src="wheelTarot.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
+				<img src="worldTarot.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
 				<div class="centered" id="eduCard" onclick="reply_click(this.id)">Educator</div>
 			</div>
 			<!--***Programmer CARD***-->
 			<div class="col-xs-6">
-				<img src="worldTarot.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
+				<img src="wheelTarot.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
 				<div class="centered" id="pgrmrCard" onclick="reply_click(this.id)">Programmer</div>
 			</div>
 		  </div>
@@ -104,9 +104,11 @@
 </div>
 
 <!--STAR BACKGROUND-->
+<!--
 <div class='stars' style="z-index: -10;"></div>
 <div class='twinkling' style="z-index: -10;"></div>
-
+<div class='clouds' style="z-index: -10;"></div>
+-->
 
 	 <script type="text/javascript">
 		var currentCard = ""; //a global empty var that will collect the id of the card you clicked
