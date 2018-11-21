@@ -4,10 +4,14 @@
 	<!--call bootstrap css-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!--link your css page-->
-	<link rel="stylesheet" type="text/css" href="page1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--link to the stylesheet for the space background effect-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<title>Projects</title>
 </head>
 <body>
+		
+
 	<!--*** *** ***	FRONT SIDE CARDS
 	INFORMATION ON THE -FRONT- OF CARDS THAT SHOW UP WHEN CARD IS TAPPED
 	*** *** ***-->
@@ -52,13 +56,13 @@
 	 <div class="row"> 
 		 	<!--***PROJECT MANAGER CARD***-->
 			<div class="col-xs-6">
-				<img src="cardback3.jpg" alt="Project Manager" class="cardSize" id="pmCard" onclick="reply_click(this.id)">	
-				<div class="centered">Project Manager</div>
+				<img src="moonTarot.jpg" alt="Project Manager" class="cardSize" id="pmCard" onclick="reply_click(this.id)">	
+				<div class="centered"  id="pmCard" onclick="reply_click(this.id)">Project Manager</div>
 			</div>
 			<!--***Activist CARD***-->
 			<div class="col-xs-6">
-				<img src="cardback3.jpg" alt="Activist" class="cardSize" id="actvstCard" onclick="reply_click(this.id)">
-				<div class="centered">Activist</div>
+				<img src="sunTarot.jpg" alt="Activist" class="cardSize" id="actvstCard" onclick="reply_click(this.id)">
+				<div class="centered" id="actvstCard" onclick="reply_click(this.id)">Activist</div>
 			</div>
 		  </div>
 		
@@ -66,13 +70,13 @@
 		  <div class="row"> 
 			  <!--***Educator CARD***-->
 			<div class="col-xs-6">
-				<img src="cardback3.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
-				<div class="centered">Educator</div>
+				<img src="wheelTarot.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
+				<div class="centered" id="eduCard" onclick="reply_click(this.id)">Educator</div>
 			</div>
 			<!--***Programmer CARD***-->
 			<div class="col-xs-6">
-				<img src="cardback3.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
-				<div class="centered">Programmer</div>
+				<img src="worldTarot.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
+				<div class="centered" id="pgrmrCard" onclick="reply_click(this.id)">Programmer</div>
 			</div>
 		  </div>
 
@@ -98,7 +102,12 @@
 		</div>
 	  </div>
 </div>
-	  
+
+<!--STAR BACKGROUND-->
+<div class='stars' style="z-index: -10;"></div>
+<div class='twinkling' style="z-index: -10;"></div>
+
+
 	 <script type="text/javascript">
 		var currentCard = ""; //a global empty var that will collect the id of the card you clicked
 
