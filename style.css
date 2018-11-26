@@ -10,7 +10,7 @@
 
 body{
   color: #fff;
-	background: linear-gradient(-45deg, #8CDFD6, #B2CEDE, #6DC0D5, #8CDFD6);
+	background: linear-gradient(-45deg, #A3F7B5, #FFD5FF, #FDF5BF, #DDFFF7);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -69,7 +69,7 @@ body{
 
 
 .col-xs-4{ /*footer row*/
-	background: linear-gradient(-45deg, #8CDFD6, #B2CEDE, #6DC0D5, #5A716A));
+	background: linear-gradient(-45deg, #FFD5FF, #FFD5FF, #FFD5FF, #FFD5FF));
 
 	height: 10vh;
 	max-height: 100%;
