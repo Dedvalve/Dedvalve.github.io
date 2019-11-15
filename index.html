@@ -1,153 +1,524 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<!--call bootstrap css-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!--link your css page-->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!--link to the stylesheet for the space background effect-->
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<title>Projects</title>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Folio - Personal Portfolio Template</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
+
 <body>
-		
 
-	<!--*** *** ***	FRONT SIDE CARDS
-	INFORMATION ON THE -FRONT- OF CARDS THAT SHOW UP WHEN CARD IS TAPPED
-	*** *** ***-->
-	
-	<!--FRONTSIDE CARD IMG-->
-	<div style="display:none;" id="frontsideCard" onclick="hideShowCard()"> <!--hide frontside card by default   onclick="hideShowCard()"-->
-		<img src="pastelBG.jpg" class="cardSizeXL centerCard"> <!--adds onclick functionality to card img-->
-	</div>
+  <!-- start section navbar -->
+  <nav id="main-nav" style="background-color: #252323;"> <!--CHANGES COLOR OF TOP NAVBAR-->
+    <div class="row" style="background-color: #252323;"> <!--CHANGES COLOR OF TOP NAVBAR-->
+      <div class="container">
 
-	<!--FRONTSIDE CARD TXT-->
-	<!--Project Manager Card txt-->
-	<div class="pmCard cardtxt" onclick="hideShowCard()" style="display: none;"> <!--id is used for function 'onclick displays this div true/false'. Hide card front by default-->
-		<div class="cardXLtext centerCard">I have 5 years of PM experience in both the print and digital world. On top of traditional projects my specialty included emerging technology such as AR and VR and how companies can use these new techs to engage their customers in exciting and new ways. I brought this new form of communication to varying degrees of success to clients such as Converse, Nickelodeon, Capri-Sun and TVLand and along a wide range of fields such as healthcare, fashion and fitness.</div>
-	</div>
-			
-	<!--Activist Card txt-->
-	<div class="actvstCard cardtxt" onclick="hideShowCard()" style="display: none;">
-		<div class="cardXLtext centerCard">Growing up in poverty in both the Bronx, NY and Ponce, Puerto Rico I have had many chances pass me by. I was extremely fortunate enough to have met a few people who were entrepreneurs and dedicated their lives to helping those less fortunate and they opened many doors for me, now its my turn to pass it on. I taught my knowledge and experience kids & youth of low income from the bronx, lgbt, african-americans and latinos all of whom are vastly underrepresented in the tech industry and that’s only the beginning.</div>
-	</div>
-			
-	<!--Educator Card txt-->
-	<div class="eduCard cardtxt" onclick="hideShowCard()" style="display: none;">
-		<div class="cardXLtext centerCard">I spent close to 4 years teaching digital literacy, game design and  programming languages to youth and young adults. My specialty was in emerging technolgy such as ar, vr, drones, etc. Their also taught skills such as public speaking, how to nail an interview and how to promote yourself in todays business environment. My priority has always been to breed the next generation of programmers to be more conscious and responsible about their fellow man, community and environment.</div>
-	</div>
-			
-	<!--Programmer Card txt-->
-	<div class="pgrmrCard cardtxt" onclick="hideShowCard()" style="display: none;">
-		<div class="cardXLtext centerCard">I am a self-taught programmer and created video-games, websites and mobile apps. I'm always on the lookout for emerging technology and how to use them in innovative ways to educate, sell a product/service, create or share something and interact with us. </div>
-	</div>
-	
-	<!--BODY CONTENT OF THE SITE-->
-<div class="container-fluid">
-	<!--the header-->
-	<div class="row"> 
-		<div class="col-xs-12">
-			<h1>David Echevarría</h1>
-		</div>
-	</div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
 
-	<!--***BACKSIDE CARDS***-->
-	 <!--(1/2 body)the body is broken into a quad-like structure for mobile-->
-	 <div class="row"> 
-		 	<!--***PROJECT MANAGER CARD***-->
-			<div class="col-xs-6">
-				<img src="queenTarot.jpg" alt="Project Manager" class="cardSize" id="pmCard" onclick="reply_click(this.id)">	
-				<div class="centered"  id="pmCard" onclick="reply_click(this.id)">Project Manager</div>
-			</div>
-			<!--***Activist CARD***-->
-			<div class="col-xs-6">
-				<img src="coquiTarot.jpg" alt="Activist" class="cardSize" id="actvstCard" onclick="reply_click(this.id)">
-				<div class="centered" id="actvstCard" onclick="reply_click(this.id)">Activist</div>
-			</div>
-		  </div>
-		
-		  <!--(2/2 body)-->
-		  <div class="row"> 
-			  <!--***Educator CARD***-->
-			<div class="col-xs-6">
-				<img src="panther2Tarot.jpg" alt="Educator" class="cardSize" id="eduCard" onclick="reply_click(this.id)">
-				<div class="centered" id="eduCard" onclick="reply_click(this.id)">Educator</div>
-			</div>
-			<!--***Programmer CARD***-->
-			<div class="col-xs-6">
-				<img src="worldTarot.jpg" alt="Programmer" class="cardSize" id="pgrmrCard" onclick="reply_click(this.id)">
-				<div class="centered" id="pgrmrCard" onclick="reply_click(this.id)">Programmer</div>
-			</div>
-		  </div>
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round" style="color: #B49D7B;"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#journal" class="smoothScroll">Blog</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
 
 
-<!--*** *** ***
-	FOOTER
-*** *** ***-->
-	<div class="row"> 
-		<div class="col-xs-4 btn"> <!--ABOUT CARD-->
-			<a href="index.html">
-				<div class="footertxt">About</div>
-			</a>
-		</div>
-		<div class="col-xs-4 btn"> <!--PROJECTS CARD-->
-			<a href="projects.html">
-				<div class="footertxt">Projects</div>
-			</a>
-		</div>
-		<div class="col-xs-4 btn"> <!--CONTACT CARD-->
-			<a href="contact.html">
-				<div class="footertxt">Contact</div>
-			</a>
-		</div>
-	  </div>
-</div>
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>designer, developeur, photographer</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
 
 
-	 <script type="text/javascript">
-		var currentCard = ""; //a global empty var that will collect the id of the card you clicked
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
 
-		function hideShowCard() 
-		{
-			var x = document.getElementById("frontsideCard"); //find the front side card img
-			var findCard = document.getElementsByClassName(currentCard); //finds all elements with the class name thats same as id
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
 
-			if (x.style.display === "none") { 	//if hidden f.side card is hidden...
-				x.style.display = "block";		//display f.side card
-				findCard.style.display = "block";
-			} else {
-				x.style.display = "none";		//else hide f.side card
-				findCard[0].style.display = "none";
-			}
-		}
+        <div class="col-lg-7">
+          <div class="about-descr">
 
-		function reply_click(clicked_id) //get the id of the card that you clicked
-		{			
-			var cardID = document.getElementById("clicked_id"); //var to store the id of the card you clicked
-			var cardClass = document.getElementById(clicked_id).id; //gets the id of a card as a string
-			var cardText = document.getElementsByClassName(cardClass); //finds all elements with the class name thats same as id
-			var fsideCard = document.getElementById("frontsideCard");
-			
-			//console.log("the card txt is" cardText[0]); //cardText becomes an array so we must always reference the first item in it (which is the txt)
+            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
+            <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
 
-			if (cardText[0].style.display === "none") { 	//if hidden
-				cardText[0].style.display = "block";		//display
-				fsideCard.style.display = "block";
-				currentCard = cardClass; //passes the id off to a global var
-			} else {
-				cardText[0].style.display = "none";		//else hide
-				fsideCard.style.display = "none";
-			}
+          </div>
 
-			console.log(currentCard);
-		}
-	</script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
 
-	<!-- BOOTSTRAP -->
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-browsers-outline"></i>
+            <span>UI/UX DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>BRAND IDENTITY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-social-android-outline"></i>
+            <span>MOBILE APPS</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-analytics-outline"></i>
+            <span>Analytics</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-camera-outline"></i>
+            <span>PHOTOGRAPHY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection" style="background-color: #333B50;"> <!--My portfolio div (full container)-->
+
+    <div class="container" style="background-color: #333B50;"> <!--My portfolio div (not full container)-->
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list"> <!--This is the nav section underneath 'My Portfolio' title-->
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">branding</li>
+              <li class="filter" data-filter=".mockups">Apps</li>
+              <li class="filter" data-filter=".uikits">Games</li>
+              <li class="filter" data-filter=".webdesign">web design</li>
+              <li class="filter" data-filter=".photography">animation</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all photography branding">
+              <a class="popup-img" href="images/portfolio/1.jpg">
+                <img src="images/portfolio/1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all photography mockups webdesign">
+              <a class="popup-img" href="images/portfolio/2.jpg">
+                <img src="images/portfolio/2.jpg"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all photography branding">
+              <a class="popup-img" href="images/portfolio/3.jpg">
+                <img src="images/portfolio/3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits mockups">
+              <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/4.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits mockups">
+              <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/5.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all uikits webdesign">
+              <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/6.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+   <!-- start section WORK HISTORY -->
+   <div id="portfolio" class="text-center paddsection" style="background-color: #333B50;"> <!--WORK HISTORY BG COLOR-->
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Work Experience</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+<!--
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">branding</li>
+              <li class="filter" data-filter=".mockups">mockups</li>
+              <li class="filter" data-filter=".uikits">ui kits</li>
+              <li class="filter" data-filter=".webdesign">web design</li>
+              <li class="filter" data-filter=".photography">photography</li>
+            </ul>
+
+          </div>
+        -->
+      <div class="portfolio-container">
+          
+          <div class="timeline">
+              <div class="timecontainer timeleft">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2017-2019</h2>
+                  <h3 style="color: #B49D7B ;">The Knowledge House</h3>
+                  <h6>Program Coordinator</h6>
+                  <p>Create & manage professional development curriculum that has served 400+ participants aged 17-70, contributing to TKH’s increase in operational budget from $700K to $2MM during tenure.</p>
+                </div>
+              </div>
+              <div class="timecontainer timeright">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2015-2017</h2>
+                  <h3 style="color: #B49D7B ;">Mass Ideation</h3>
+                  <h6>Project Manager</h6>
+                  <p>Prioritize what projects would be taken on by the organization & shifted away from web projects to more advanced projects desired by shareholders. Projects include AR apps, videography/animation, video games, back-end sites and more.</p>
+                </div>
+              </div>
+              <div class="timecontainer timeleft">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2015-2016</h2>
+                  <h3 style="color: #B49D7B ;">TVLand</h3>
+                  <h6>Digital Project Manager</h6>
+                  <p>I managed the marketing material for various digital banners and other forms of paid media. I handled the delivery of assets, assisted in what type of marketing materials would be displayed, managed partnerships and led a cross-functional team to transition the company from flash to HTML5 ads.</p>
+                </div>
+              </div>
+              <div class="timecontainer timeright">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2015-2015</h2>
+                  <h3 style="color: #B49D7B ;">Grand Visual</h3>
+                  <h6>Digital Project Manager</h6>
+                  <p>I came on as a freelance project manager for both an animation & a special interactive experience to coincide with the launch of Chuck II Converse. Created SOW, managed budget, performed Q&A, led a cross-functional team, & managing vendor relations.</p>
+                </div>
+              </div>
+              <div class="timecontainer timeleft">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2013-2015</h2>
+                  <h3 style="color: #B49D7B ;">Mass Ideation</h3>
+                  <h6>Jr. Project Manager</h6>
+                  <p>I came onto Mass Ideation early into my career. I handled all the projects from pre-conception/planning to budget and execution. I managed many high profile projects such as an employee portal for Johnson & Johnson, a video game for IHOP, an augmented reality app for Nickelodeon on top of various web & motion graphics projects. </p>
+                </div>
+              </div>
+              <div class="timecontainer timeright">
+                <div class="timecontent">
+                  <h2 style="color: #898989;">2013-2013</h2>
+                  <h3 style="color: #B49D7B ;">Gage Strategies</h3>
+                  <h6>Project Coordinator</h6>
+                  <p>I assisted the Monroe community through an experimental educational program where they can focus on trying to get a job in todays world of technology through outlets such as LinkedIn, twitter, etc. </p>
+                </div>
+              </div>
+            </div>
+
+      </div>
+  <!-- End section WORK EXP-->
+
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">GET IN TOUCH</h2>
+
+              <ul class="contact-details" style="color: #E8D6CB;">
+                <li><span>Manhattan, Bronx, Yonkers Area</span></li>
+                <li><span>New York, United States</span></li>
+                <li><span>+1 718-536-8362</span></li>
+                <li><span>davidcechevarria@gmail.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Folio. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
