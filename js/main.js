@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["David Echevarría.", "A Project Manager.", "A Digital Marketor.", "A Brand Consultant."],
+      strings: ["David Echevarría.", "A Project Manager.", "A Digital Marketor.", "A Project Coordinator."],
       typeSpeed: 100,
       loop: true,
     });
